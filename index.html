@@ -6,7 +6,6 @@
     <title>Betool.dev | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!-- Add Font Awesome for LinkedIn icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -16,25 +15,26 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li> <!-- New nav item -->
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="hero">
-        <h1>Betool<span class="highlight">.dev</span></h1>
-        <p>Innovating at the edge of technology and design.</p>
-        <a href="#projects" class="btn">Explore Projects</a>
-    </section>
-
-    <!-- Updated About section with video (see below) -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m Betool—a mechanical engineer who thrives at the intersection of grit and genius. I tackle technical challenges head-on, whether it’s prototyping a game-changing product or throwing a knockout punch in Muay Thai. With a passion for competitions and a mind wired for innovation, I’m always crafting personal projects to sharpen my engineering edge. Specializing in product design, I’m here to build solutions that big companies covet and startups can’t ignore.</p>
-        <!-- Video placeholder - replace src with your video URL -->
-        <video controls width="600">
-            <source src="mee.mov" type="video/quicktime">
+        <video autoplay muted loop class="hero-video">
+            <source src="mee.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <div class="hero-content">
+            <h1>Betool<span class="highlight">.dev</span></h1>
+            <p>Innovating at the edge of technology and design.</p>
+            <a href="#projects" class="btn">Explore Projects</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Betool—part mechanical engineer, part inventor, all fighter. With a wrench in one hand and a Muay Thai glove on the other, I turn complex problems into elegant solutions. My venture? Designing and prototyping products that don’t just work—they redefine what’s possible. From competition stages to CAD screens, I thrive on the rush of cracking a challenge, whether it’s optimizing a gear system or landing a perfect roundhouse. I’m relentlessly tinkering on personal projects—honing my craft to deliver innovations that make industry giants take notice and startups beg for my blueprint.</p>
+        <img src="betool.jpg" alt="Betool working on a prototype" class="about-img">
     </section>
 
     <section id="projects">
@@ -57,7 +57,6 @@
         <p>Thoughts and updates coming soon.</p>
     </section>
 
-    <!-- New Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Let’s connect! Reach me at: <a href="mailto:mohsenbetool@gmail.com">mohsenbetool@gmail.com</a></p>
