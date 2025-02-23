@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Gear and Holder Design | Betool.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Betool.dev</div>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <h1>Vehicle Gear and Holder Design</h1>
+        <div class="project-content">
+            <h2>About</h2>
+            <p>This project aimed to engineer a high-precision gear and holder system for a snowmobile blade, blending iterative simulation and rapid prototyping to push design optimization to new heights.</p>
+
+            <h2>Task/Action</h2>
+            <ul>
+                <li>Orchestrated project management within tight constraints, designing over 100 components via SolidWorks with detailed 2D drawings and dimensioning.</li>
+                <li>Applied Design for Manufacturability (DFM) principles, cutting production costs by 10%.</li>
+                <li>Collaborated with cross-functional teams to enhance blade assembly consistency, reducing failure rates by 20% and boosting throughput by 15% using FEA simulation and failure mode analysis.</li>
+                <li>Evaluated safety, environmental, and legal impacts to ensure a holistic solution.</li>
+            </ul>
+
+            <h2>Result</h2>
+            <p>Delivered a fully functional blade system with 99.9% dimensional accuracy—praised as “one of the most accurate designs” by peers—redefining reliability for extreme conditions.</p>
+            <p><strong>Tech Stack:</strong> SolidWorks, FEA Simulation, DFM Principles</p>
+
+            <div class="project-media">
+                <video autoplay muted loop class="project-video">
+                    <source src="vehicle-gear-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="gallery-thumbs">
+                    <img src="gear-photo1.jpg" alt="Gear Prototype" class="thumb" onclick="openModal('vehicle-gear')">
+                    <img src="gear-photo2.jpg" alt="Blade Assembly" class="thumb" onclick="openModal('vehicle-gear')">
+                    <img src="gear-photo3.jpg" alt="Simulation" class="thumb" onclick="openModal('vehicle-gear')">
+                    <img src="gear-photo4.jpg" alt="Final Design" class="thumb" onclick="openModal('vehicle-gear')">
+                </div>
+            </div>
+        </div>
+        <div id="modal-vehicle-gear" class="modal">
+            <span class="close" onclick="closeModal('vehicle-gear')">×</span>
+            <div class="modal-content">
+                <video controls class="modal-media">
+                    <source src="vehicle-gear-video.mp4" type="video/mp4">
+                </video>
+                <img src="gear-photo1.jpg" class="modal-media">
+                <img src="gear-photo2.jpg" class="modal-media">
+                <img src="gear-photo3.jpg" class="modal-media">
+                <img src="gear-photo4.jpg" class="modal-media">
+            </div>
+            <a class="prev" onclick="changeMedia('vehicle-gear', -1)">❮</a>
+            <a class="next" onclick="changeMedia('vehicle-gear', 1)">❯</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Betool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
