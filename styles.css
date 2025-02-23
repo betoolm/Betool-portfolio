@@ -249,7 +249,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.gallery-grid {
+.project-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -328,13 +328,13 @@ footer {
     .about-image-wrapper {
         width: 250px;
     }
-    .gallery-grid {
+    .project-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .gallery-grid {
+    .project-gallery {
         grid-template-columns: 1fr;
     }
 }
