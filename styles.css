@@ -129,19 +129,24 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    gap: 30px;
+    gap: 20px;
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .about-text {
     flex: 1;
-    min-width: 300px;
+    min-width: 0; /* Prevents overflow */
 }
 
 .about-img {
-    width: 300px;
-    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
     display: block;
     max-width: 100%;
@@ -187,7 +192,7 @@ h2 {
 
 #project-detail {
     padding: 100px 20px 80px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: left;
 }
@@ -200,9 +205,23 @@ h2 {
     text-align: center;
 }
 
+.project-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    flex: 1;
+    min-width: 300px;
+}
+
 .project-content h2 {
     font-size: 28px;
-    margin: 20px 0 10px;
+    margin: 20px 0 15px;
 }
 
 .project-content ul {
@@ -215,28 +234,29 @@ h2 {
     margin-bottom: 10px;
 }
 
-.project-media {
-    margin-top: 30px;
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task-img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+    margin: 10px 0;
+}
+
+.task-img.right {
+    align-self: flex-end;
 }
 
 .project-video {
     width: 100%;
-    max-width: 800px; /* Horizontal, not strip */
+    max-width: 600px;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 0 auto 20px;
     display: block;
-}
-
-.inline-img {
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    margin: 15px;
-    float: left; /* Seamlessly integrate with text */
-}
-
-.inline-img.right {
-    float: right;
 }
 
 .gallery-inline {
@@ -245,6 +265,12 @@ h2 {
     gap: 15px;
     justify-content: center;
     margin-top: 20px;
+}
+
+.result-img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
 
 .blog-list {
@@ -310,9 +336,14 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    .inline-img, .inline-img.right {
-        float: none;
-        margin: 15px auto;
-        display: block;
+    .project-header {
+        flex-direction: column;
+    }
+    .task-img, .task-img.right {
+        align-self: center;
+    }
+    .result-img {
+        width: 100%;
+        max-width: 300px;
     }
 }
