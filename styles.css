@@ -137,3 +137,31 @@ footer {
     nav ul { flex-direction: column; }
     nav ul li { margin: 10px 0; }
 }
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 20px;
+    color: #B0B0B0;
+}
+
+#contact a {
+    color: #00D4FF;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.linkedin-link {
+    font-size: 36px;
+    color: #00D4FF;
+    transition: color 0.3s;
+}
+
+.linkedin-link:hover {
+    color: #FFFFFF;
+}
