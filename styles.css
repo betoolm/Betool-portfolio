@@ -236,6 +236,15 @@ h2 {
     min-width: 300px;
 }
 
+.image-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 200px;
+    justify-content: flex-start;
+}
+
 .image-pair {
     display: flex;
     gap: 15px;
@@ -265,11 +274,11 @@ h2 {
 }
 
 .side-img.left {
-    order: -1; /* Moves to left of text */
+    order: -1;
 }
 
 .side-img.right {
-    order: 1; /* Keeps on right */
+    order: 1;
 }
 
 .project-media {
@@ -386,6 +395,9 @@ footer {
     }
     .image-pair {
         justify-content: center;
+    }
+    .image-column {
+        align-items: center;
     }
     .side-img.left, .side-img.right {
         order: 0;
