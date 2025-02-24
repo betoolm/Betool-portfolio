@@ -21,6 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #00D4FF;
+    z-index: 1000;
 }
 
 .logo {
