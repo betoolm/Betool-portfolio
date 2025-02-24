@@ -271,7 +271,7 @@ h2 {
     width: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    margin-top: 40px; /* Increased from 20px */
+    margin-top: 50px; /* Increased from 20px */
 }
 
 .side-video.right {
@@ -329,7 +329,7 @@ h2 {
 
 .video-strip {
     width: 100%;
-    height: 350px; /* Increased from 250px */
+    height: 450px; /* Increased from 250px */
     overflow: hidden;
     background: #252525;
     border-bottom: 1px solid #00D4FF;
