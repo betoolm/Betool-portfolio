@@ -210,54 +210,37 @@ h2 {
 
 #project-detail {
     padding: 100px 20px 80px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: left;
-}
-
-.project-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-    gap: 20px;
-    background: #252525;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #00D4FF;
 }
 
 #project-detail h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 36px;
     color: #00D4FF;
-    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.header-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.content-wrapper {
+.content-section {
     display: flex;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
-.text-column {
+.text-block {
     flex: 2;
     min-width: 300px;
 }
 
-.image-column {
-    flex: 1;
+.image-pair {
     display: flex;
-    flex-direction: column;
     gap: 15px;
-    min-width: 200px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .project-content h2 {
@@ -276,9 +259,17 @@ h2 {
 }
 
 .side-img {
-    width: 100%;
+    width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.side-img.left {
+    order: -1; /* Moves to left of text */
+}
+
+.side-img.right {
+    order: 1; /* Keeps on right */
 }
 
 .project-media {
@@ -389,15 +380,15 @@ footer {
     .about-image-wrapper {
         width: 250px;
     }
-    .project-header {
+    .content-section {
         flex-direction: column;
-        text-align: center;
-    }
-    .content-wrapper {
-        flex-direction: column;
-    }
-    .image-column {
         align-items: center;
+    }
+    .image-pair {
+        justify-content: center;
+    }
+    .side-img.left, .side-img.right {
+        order: 0;
     }
     .project-gallery {
         grid-template-columns: repeat(2, 1fr);
