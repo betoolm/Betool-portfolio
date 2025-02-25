@@ -252,12 +252,13 @@ h2 {
     min-width: 300px;
 }
 
-.image-stack {
+.image-pair {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     flex: 1;
     min-width: 200px;
+    justify-content: flex-end;
 }
 
 .side-img {
