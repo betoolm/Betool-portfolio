@@ -22,7 +22,8 @@
             <div class="content-section">
                 <div class="text-block">
                     <h2>About</h2>
-                    <p>The C-Wrist is a wearable vital monitoring system designed to alleviate hospital overcrowding by enabling at-home care for mild COVID-19 outpatients. This project engineered an efficient device to assess critical parameters—body temperature, heart rate, and oxygen saturation—leveraging electrical device theory, sensor integration, and signal conditioning. By providing real-time data, it empowers physicians to prioritize care without compromising quality, addressing a pressing need in respiratory illness management.</p>
+                    <p>The C-Wrist is a wearable wrist device designed to monitor vital signs for mild COVID-19 outpatients, reducing hospital capacity strain and promoting at-home care. The device continuously tracks body temperature, heart rate, oxygen saturation, and motion, allowing patients to receive real-time health updates while performing daily activities.</p>
+                    <p>By leveraging electrical device theory, sensor theory, and signal conditioning, this solution ensures early warning alerts when vitals deviate from safe thresholds, enabling timely intervention and preventing critical complications.</p>
                 </div>
                 <img src="m1.png" alt="C-Wrist Concept" class="side-img right">
             </div>
@@ -30,22 +31,25 @@
             <div class="content-section">
                 <img src="m2.png" alt="Prototype Design" class="side-img left">
                 <div class="text-block">
-                    <h2>Task/Action</h2>
+                    <h2>How?</h2>
                     <ul>
-                        <li>Developed 3D CAD models in SOLIDWORKS, designing electrical enclosures with cable routing, button interfaces, wiring linkages, hinges, and wristwatch components, optimized for injection molding, sheet metal fabrication, and precision machining.</li>
-                        <li>Managed project budgets, delivered weekly technical reports, and applied engineering principles to ensure cost-effective development.</li>
-                        <li>Performed failure mode analysis, root-cause investigations, and corrective design iterations to enhance component reliability.</li>
-                        <li>Designed and executed Design of Experiments (DOEs) to refine and down-select configurations, achieving optimal sensor performance.</li>
-                        <li>Integrated Arduino and Python for real-time data analysis, improving measurement accuracy by 15% through advanced signal processing.</li>
+                        <li>3D CAD Design: Created precise SOLIDWORKS models for the device housing, including soldering enclosures, button interfaces, hinges, and cable routing.</li>
+                        <li>Sensor Integration: Utilized a SparkFun Pulse Oximeter and Heart Rate Sensor, an M5STACK NCIR Temperature Sensor, and an accelerometer for motion detection to enhance measurement accuracy.</li>
+                        <li>Electronics & Programming: Used Arduino for sensor interfacing and Python for data processing, ensuring reliable real time monitoring and analysis.</li>
+                        <li>Applied low-pass Butterworth filtering in Python to reduce noise in EMG and temperature signals.</li>
+                        <li>Design Optimization: Conducted Design of Experiments (DOE) in Minitab to refine sensor placement and enclosure design, improving signal quality and user comfort.</li>
+                        <li>Quality Assurance: Performed failure analysis, root cause analysis, and correction methods to enhance system durability and performance.</li>
+                        <li>Project Management: Managed project budgets, delivered weekly progress reports, and ensured adherence to technical engineering standards.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="content-section">
                 <div class="text-block">
-                    <h2>Result</h2>
-                    <p>The C-Wrist emerged as a robust wearable system for monitoring mild COVID-19 outpatients, tracking body temperature, heart rate, and oxygen saturation—key indicators in respiratory health. Utilizing a SparkFun Pulse Oximeter and Heart Rate Sensor, an M5STACK NCIR Temperature Sensor, and an accelerometer for motion correction, it delivers four metrics via an LCD display in real time. Patients receive alerts for critical vitals, enabling safe daily activity with a 15% improvement in data reliability over baseline designs.</p>
-                    <p><strong>Tech Stack:</strong> SOLIDWORKS, Arduino, Python, Sensor Integration</p>
+                    <h2>Results</h2>
+                    <p>The final C-Wrist device provides continuous, real-time monitoring of body temperature, heart rate, oxygen saturation, and motion, displayed on an integrated LCD screen. Patients receive instant notifications if vitals enter dangerous zones, allowing them to seek timely medical attention while continuing everyday activities.</p>
+                    <p>This innovative solution not only enhances patient safety but also alleviates hospital burdens, ensuring high quality care without compromising healthcare resources.</p>
+                    <p><strong>Tech Stack:</strong> SOLIDWORKS, Arduino, Python</p>
                 </div>
                 <video autoplay muted loop class="side-video right">
                     <source src="IMG_6321.mp4" type="video/mp4">
