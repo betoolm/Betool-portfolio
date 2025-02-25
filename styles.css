@@ -428,3 +428,8 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.tech-stack {
+    font-size: 14px;
+    color: #00D4FF;
+    margin-top: 10px;
+}
