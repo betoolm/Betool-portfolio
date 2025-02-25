@@ -220,27 +220,55 @@ h2 {
     text-align: left;
 }
 
-.project-header {
+.title-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
     flex-wrap: wrap;
     gap: 20px;
-    background: #252525;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #00D4FF;
 }
 
-.header-img {
+.title-img {
+    width: 200px; /* Bigger from 100px */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.content-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.text-block {
+    flex: 2;
+    min-width: 300px;
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.side-img {
     width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
 
-.header-img.small {
-    width: 100px;
+.side-img.right {
+    order: 1;
+}
+
+.bottom-img {
+    width: 250px; /* Bigger from 200px */
+    margin-top: 20px; /* Moved down slightly */
 }
 
 .content-section {
