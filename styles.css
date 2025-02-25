@@ -249,6 +249,33 @@ h2 {
 }
 
 .content-section {
+    margin-bottom: 30px;
+    overflow: hidden; /* Clear floats */
+}
+
+.side-img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+    margin: 10px;
+}
+
+.side-img.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.side-img.right {
+    float: right;
+    margin-left: 20px;
+}
+
+.side-img.center {
+    display: block;
+    margin: 10px auto;
+}
+
+.content-section {
     display: flex;
     align-items: flex-start;
     gap: 20px;
