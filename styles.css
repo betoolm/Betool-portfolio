@@ -225,6 +225,28 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
 }
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00D4FF;
+}
+
+.header-img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.header-img.small {
+    width: 100px;
+}
 
 .content-section {
     display: flex;
