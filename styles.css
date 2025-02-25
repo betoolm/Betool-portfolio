@@ -262,13 +262,13 @@ h2 {
 }
 
 .side-img {
-    width: 250px;
+    width: 350px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
 
 .side-img.left {
-    width: 300px; /* Bigger for m2.png */
+    width: 400px; /* Bigger for m2.png */
     order: -1;
 }
 
