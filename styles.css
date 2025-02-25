@@ -236,7 +236,7 @@ h2 {
 }
 
 .title-img.small {
-    width: 200px;
+    width: 100px;
 }
 
 .content-section {
@@ -255,20 +255,25 @@ h2 {
 .image-pair {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px; /* Tighter gap for cleaner look */
     flex: 1;
     min-width: 200px;
     justify-content: flex-end;
+    align-items: flex-start; /* Aligns images to top */
 }
 
 .side-img {
-    width: 350px;
+    width: 200px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
 
 .side-img.right {
     order: 1;
+}
+
+.side-img.left {
+    order: -1;
 }
 .content-section {
     display: flex;
