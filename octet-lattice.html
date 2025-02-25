@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet-Lattice-Structure | Betool.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Betool.dev</div>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <h1>Octet-Lattice-Structure</h1>
+        <div class="project-content">
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>About</h2>
+                    <p>There is a call for urgent technological improvements to be pursued by Protective Equipment (PE) customers, and the need for safety is being emphasized. The primary goal of this project is to innovate a design that revelutionalize the safety of contact sports while still pertaining to safety and comfort standards. As well, research into an alternative foam-based equipment is necessary as the production of current used materials like HDPE and EPS have considerable impact on the  health and environment.</p>
+                    <p>This project outlines the planned implementation of a 3D printed octet-truss lattice structure of Polymethyl Methacrylate (PMMA), in PE such as helmets, shinguards and vehicles.</p>
+                </div>
+                <div class="image-pair">
+                    <img src="p1.png" alt="Octet Truss Concept" class="side-img">
+                    <img src="p2.png" alt="Lattice Structure" class="side-img">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <img src="p3.png" alt="FEA Simulation" class="side-img left">
+                <div class="text-block">
+                    <h2>How?</h2>
+                    <ul>
+                        <li>Designed 3D CAD models of unit cells with varying link radii (0.5 mm, 1.0 mm, and 1.5 mm) and lengths (9 mm, 10.8 mm, 13.5 mm, and 18 mm) in SOLIDWORKS.</li>
+                        <li>Conducted finite element analysis (FEA) simulations in ANSYS to assess stress, strain, and energy absorption characteristics.</li>
+                        <li>Performed mesh convergence studies to optimize simulation accuracy, balancing computational efficiency and result precision.</li>
+                        <li>Analyzed impact resistance through force vs. displacement and energy vs. displacement simulations, comparing unit cell and full lattice structures.</li>
+                        <li>Applied specific energy absorption (SEA) calculations to evaluate and rank structural efficiency.</li>
+                        <li>Developed decision matrices to identify the optimal truss design for integration into helmet padding.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>Results</h2>
+                    <p>The study revealed that increasing link radius while reducing truss length significantly enhanced energy absorption efficiency. A 5x5x5 octet truss lattice with a 1.5 mm link radius and 9 mm link length exhibited the highest specific energy absorption (SEA), making it the optimal choice for helmet padding applications. The impact test simulations demonstrated that the lattice structure effectively dissipated impact forces, reducing stress concentrations and improving protective capabilities compared to conventional foam materials. These findings suggest that integrating octet truss structures could lead to safer and more efficient helmet designs while maintaining lightweight properties.</p>
+                    <p><strong>Tech Stack:</strong> 3D printing, FEA, CAD, DOE, DFM, Mechanics</p>
+                    <p><a href="Octet-Truss Lattice Structure Helmet.pdf" target="_blank">Read the full report...</a></p>
+                </div>
+                <img src="p4.png" alt="Optimal Truss Design" class="side-img right">
+            </div>
+            <div class="result-footer">
+                <img src="p5.png" alt="Helmet Integration" class="result-img">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Betool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
