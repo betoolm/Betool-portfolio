@@ -136,12 +136,24 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
     gap: 20px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #00D4FF;
 }
 
 .about-image-wrapper {
     position: relative;
     width: 300px;
     flex-shrink: 0;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+    display: block;
 }
 
 .image-overlay {
@@ -199,19 +211,13 @@ h2 {
     transform: translateY(-10px);
 }
 
+
+
 #project-detail {
     padding: 100px 20px 80px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: left;
-}
-
-#project-detail h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 36px;
-    color: #00D4FF;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .title-wrapper {
@@ -221,6 +227,16 @@ h2 {
     margin-bottom: 40px;
     gap: 15px;
     flex-wrap: nowrap;
+}
+
+.title-img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.title-img.small {
+    width: 100px;
 }
 
 .content-section {
@@ -245,32 +261,60 @@ h2 {
     order: 1;
 }
 
-.project-content h2 {
-    font-size: 26px;
-    margin: 20px 0 15px;
+.side-img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
 
-.project-content ul {
-    list-style: disc;
-    margin-left: 20px;
-    color: #D0D0D0;
+.side-img.left {
+    width: 400px; /* Bigger for m2.png */
+    order: -1;
 }
 
-.project-content li {
-    margin-bottom: 10px;
+.side-img.right {
+    order: 1;
 }
 
-.video-strip {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    background: #252525;
-    border-bottom: 1px solid #00D4FF;
+.side-video {
+    width: 400px; /* Bigger from 350px */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.side-video.right {
+    order: 1;
+}
+
+.side-video.left {
+    order: -1;
 }
 
 .result-footer {
     text-align: center;
     margin-top: 20px;
+}
+
+.result-img {
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+    display: block;
+    margin: 0 auto;
+}
+
+.project-media {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+    display: block;
+    margin: 0 auto;
 }
 
 .project-gallery {
@@ -280,10 +324,24 @@ h2 {
     margin-top: 20px;
 }
 
-.tech-stack {
-    font-size: 14px;
-    color: #00D4FF;
-    margin-top: 10px;
+.gallery-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.video-strip {
+    width: 100%;
+    height: 550px; /* Increased from 250px */
+    overflow: hidden;
+    background: #252525;
+    border-bottom: 1px solid #00D4FF;
+}
+
+.strip-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .blog-list {
@@ -342,170 +400,6 @@ footer {
     border-top: 1px solid #00D4FF;
 }
 
-/* Unique image/video classes */
-.betool-img {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    display: block;
-}
-
-.m1-img {
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of About */
-}
-
-.m2-img {
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: -1; /* Left of How? */
-}
-
-.c-wrist-video {
-    width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of Results */
-}
-
-.m3-img {
-    width: 500px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    display: block;
-    margin: 0 auto; /* Below Results */
-}
-
-.car1-img {
-    width: 100px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.car2-img {
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of About */
-}
-
-.car3-img {
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of How? */
-}
-
-.car4-img {
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.car5-img {
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.g1-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.g3-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.g2-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: -1; /* Left of How? */
-}
-
-.g4-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of Results */
-}
-
-.d1-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.d2-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.d3-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: -1; /* Left of How? */
-}
-
-.d4-img {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of Results */
-}
-
-.snowmove-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.lucky-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.vehicle-gear-video {
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    order: 1; /* Right of How? */
-}
-
-.gear-photo1-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.gear-photo2-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.gear-photo3-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
-.gear-photo4-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-}
-
 @media (max-width: 768px) {
     #hero h1 { font-size: 32px; }
     nav ul { flex-direction: column; }
@@ -524,6 +418,9 @@ footer {
     .image-pair {
         justify-content: center;
     }
+    .side-img.left, .side-img.right, .side-video.left, .side-video.right {
+        order: 0;
+    }
     .project-gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -533,4 +430,9 @@ footer {
     .project-gallery {
         grid-template-columns: 1fr;
     }
+}
+.tech-stack {
+    font-size: 14px;
+    color: #00D4FF;
+    margin-top: 10px;
 }
