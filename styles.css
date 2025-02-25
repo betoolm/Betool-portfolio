@@ -243,7 +243,7 @@ h2 {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
     background: #252525; /* Dark card background */
     padding: 20px;
