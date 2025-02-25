@@ -242,9 +242,10 @@ h2 {
 .content-section {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between; /* Ensures text and images spread out */
     gap: 20px;
     margin-bottom: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevents wrapping to keep images right */
 }
 
 .text-block {
@@ -255,11 +256,9 @@ h2 {
 .image-pair {
     display: flex;
     flex-direction: row;
-    gap: 10px; /* Tighter gap for cleaner look */
-    flex: 1;
-    min-width: 200px;
-    justify-content: flex-end;
-    align-items: flex-start; /* Aligns images to top */
+    gap: 10px;
+    min-width: 0; /* Prevents overflow */
+    order: 1; /* Ensures right placement */
 }
 
 .side-img {
