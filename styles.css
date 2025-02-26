@@ -131,7 +131,7 @@ h2 {
 
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Aligns top, adjusts for full image height */
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -140,15 +140,13 @@ h2 {
 
 .about-image-wrapper {
     position: relative;
-    width: 300px;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Prevents shrinking, keeps natural size */
 }
 
 .betool-img {
-    width: 100%;
+    width: 300px; /* Fixed width, adjust as needed */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
-    object-fit: contain;
 }
 
 .image-overlay {
