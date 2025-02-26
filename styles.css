@@ -447,5 +447,5 @@ footer {
     border-radius: 5px;
     margin-top: 10px;
     display: inline-block;
-    text-shadow: 0 0 5px rgba(0, 212, 255, 0.8), 0 0 10px rgba(0, 212, 255, 0.5);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
