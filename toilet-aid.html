@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toilet Aid | Betool.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Betool.dev</div>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <h1>Toilet Aid</h1>
+        <div class="project-content">
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>About</h2>
+                    <p>The Toilet Aid was designed to improve independence, hygiene, and accessibility for individuals with limited dexterity, mobility impairments, arthritis, or post-surgical recovery needs. The goal was to develop a low-cost, easy-to-use, and hygienic wiping aid that allows users to handle toilet paper independently. The design prioritized affordability (<$10 CAD), ease of use, hygiene, and ergonomic effectiveness, ensuring it can be widely adopted by elderly individuals, people with disabilities, and underserved communities. The device also complies with ISO 17966:2016, the standard for assistive devices for personal hygiene, ensuring safety, performance, and ease of use.</p>
+                </div>
+                <img src="t1.png" alt="Toilet Aid Concept" class="side-img right">
+            </div>
+
+            <div class="content-section">
+                <img src="t2.png" alt="Toilet Aid Prototype" class="side-img left">
+                <div class="text-block">
+                    <h2>How?</h2>
+                    <ul>
+                        <li>User Centered Design Approach: Conducted client validation meetings and consultations to refine design requirements based on grip strength, range of motion, and hygiene needs.</li>
+                        <li>Material Selection & Cost Optimization: Identified kitchen tongs ($2-$6 CAD) as a readily available, cost effective base component.</li>
+                    </ul>
+                    <h3>Design Enhancements:</h3>
+                    <ul>
+                        <li>Custom Handle Grip: Designed to improve ergonomics for users with reduced hand strength, ensuring a comfortable and firm grasp.</li>
+                        <li>Adjustable Reach: Allows customization for various mobility needs, supporting users with shoulder, wrist, and finger limitations.</li>
+                        <li>Locking Mechanism: Integrated to secure toilet paper during use, preventing accidental slippage.</li>
+                    </ul>
+                    <ul>
+                        <li>Mechanical & Force Calculations: Maximum grip strength required: 25 N (as per ISO 17966:2016) was achieved.</li>
+                        <li>Lever arm calculations ensured that users could apply sufficient force with minimal hand strength, reducing fatigue and maximizing efficiency.</li>
+                        <li>Evaluated contact pressure and force distribution across the wiping surface to ensure sufficient pressure for proper hygiene.</li>
+                    </ul>
+                    <h3>Finite Element Analysis (FEA):</h3>
+                    <ul>
+                        <li>Conducted static stress, strain, and displacement simulations using ANSYS to validate structural integrity.</li>
+                        <li>Confirmed that the design withstands multiple use cycles without mechanical failure.</li>
+                        <li>Analyzed material deformation under repeated applied forces to ensure durability.</li>
+                    </ul>
+                    <ul>
+                        <li>Gathered user feedback on ease of use, hygiene, and effectiveness, comparing various assistive tools like dish scrubbers, hangers, and toilet brushes.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>Results</h2>
+                    <p>The Toilet Aid successfully met cost, hygiene, usability, and ISO compliance criteria, offering a simple, ergonomic, and widely accessible solution:</p>
+                    <p>The final design maintained a low cost ($2-$6 CAD) while ensuring long-term usability and durability.</p>
+                    <p>ISO 17966:2016 Compliance: Ensured the safety, performance, and ease of use required for assistive personal hygiene devices.</p>
+                    <p>Ergonomic & Functional Design: Users can operate the device with one or two hands, ensuring sufficient grip strength and wiping pressure.</p>
+                    <p>Mechanical Validation: Calculations confirmed that the device meets the 25 N force requirement with a factor of safety (FOS) > 2, ensuring reliability under normal use.</p>
+                    <p>User Validation: Surveys confirmed high ease-of-use ratings, with improved cleaning efficiency compared to alternative assistive devices.</p>
+                    <p><strong>Tech Stack:</strong> FEA, CAD, Mechanics, Prototyping, Materials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Betool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
