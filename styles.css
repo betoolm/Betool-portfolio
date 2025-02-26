@@ -439,7 +439,12 @@ footer {
     }
 }
 .tech-stack {
-    font-size: 14px;
+    font-size: 14px; /* Larger from 14px */
+    font-weight: 600; /* Bolder */
     color: #00D4FF;
+    background: rgba(0, 212, 255, 0.1); /* Subtle cyan background */
+    padding: 5px 10px; /* Padding for emphasis */
+    border-radius: 5px; /* Rounded corners */
     margin-top: 10px;
+    display: inline-block; /* Fits content width */
 }
