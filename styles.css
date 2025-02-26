@@ -446,6 +446,6 @@ footer {
     padding: 5px 10px;
     border-radius: 5px;
     margin-top: 10px;
-    display: inline-block;
-    #text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
+    #display: #inline-block;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
