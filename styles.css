@@ -449,15 +449,27 @@ footer {
     #display: #inline-block;
     text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
+#hackathons {
+    padding: 60px 20px;
+    text-align: center;
+}
+
 .video-pair {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .hackathon-video {
-    width: 300px; /* Fixed width for videos */
+    width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+.project-card h4 {
+    font-size: 18px;
+    color: #00D4FF;
+    margin: 20px 0 10px;
 }
