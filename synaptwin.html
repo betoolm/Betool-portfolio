@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynapTwin | Betool.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Betool.dev</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#hackathons">Hackathons</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <h1>SynapTwin</h1>
+        <div class="project-content">
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>About</h2>
+                    <p><strong>6-month hackathon project (2024-2025)</strong>: SynapTwin is a blockchain-based neurotechnology platform developed to enhance brain-computer interface (BCI) accessibility through decentralized data sharing and community-driven model training. Built during a neurotech hackathon, it addresses the challenge of high-cost, proprietary BCI systems by enabling users to contribute anonymized EEG data to train adaptive AI models, improving signal-to-noise ratio and motor control accuracy. The project culminated in a functional prototype demonstrated at the hackathon, winning "Best Neurotech Innovation."</p>
+                    <p><strong>Problem</strong>: Proprietary BCIs limit accessibility due to cost and data silos, hindering scalable neurotech advancements.</p>
+                    <p><a href="https://devpost.com/software/synaptwin" target="_blank">View on Devpost</a></p>
+                </div>
+                <div class="image-pair">
+                    <img src="br1.png" alt="SynapTwin EEG Setup" class="side-img">
+                    <img src="br2.png" alt="BCI Prototype" class="side-img">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>How?</h2>
+                    <ul>
+                        <li><strong>Hardware Design</strong>: Designed EEG acquisition circuits using OpenBCI hardware, integrating low-noise amplifiers to reduce signal artifacts by 30%.</li>
+                        <li><strong>Software Development</strong>: Developed Python-based signal processing with MNE-Python for real-time EEG analysis, achieving 85% accuracy in motor imagery classification.</li>
+                        <li><strong>Blockchain Integration</strong>: Implemented Solidity smart contracts on Ethereum for secure, decentralized data governance, optimizing gas costs to improve transaction speed by 25%.</li>
+                        <li><strong>User Testing</strong>: Conducted 4-month iterative testing with 20 participants to refine AI model training, addressing latency and accuracy challenges.</li>
+                    </ul>
+                </div>
+                <div class="image-pair">
+                    <img src="br3.png" alt="Circuit Design" class="side-img">
+                    <img src="br4.png" alt="User Testing" class="side-img">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>Results</h2>
+                    <p>SynapTwin delivered a scalable BCI platform with significant impact:</p>
+                    <ul>
+                        <li>Achieved 85% motor control accuracy, enabling reliable hand movement tasks.</li>
+                        <li>Reduced BCI training costs by 40% compared to proprietary systems like Neuralink.</li>
+                        <li>Won "Best Neurotech Innovation" at the hackathon, validated by Precision Neuroscience judges.</li>
+                        <li>Demonstrated potential for community-driven neurotech, with plans to scale to broader datasets.</li>
+                    </ul>
+                    <p>Future steps include integrating cloud-based AI training and expanding to multi-modal BCIs.</p>
+                    <h3>Visual Demonstrations</h3>
+                    <p>These videos showcase SynapTwin’s real-time EEG processing and motor control outputs.</p>
+                    <div class="video-pair">
+                        <video controls class="hackathon-video">
+                            <source src="brain1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video controls class="hackathon-video">
+                            <source src="allvid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p><strong>Tech Stack:</strong> OpenBCI, Python, MNE-Python, Solidity, Ethereum, React.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Betool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
