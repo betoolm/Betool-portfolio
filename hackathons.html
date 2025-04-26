@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Projects | Betool.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Betool.dev</div>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-detail">
+        <h1>Hackathon Projects</h1>
+        <div class="project-content">
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>SynapTwin</h2>
+                    <p><strong>6-month hackathon project (2024-2025)</strong>: SynapTwin is a blockchain-based neurotechnology platform developed to enhance brain-computer interface (BCI) accessibility through decentralized data sharing and community-driven model training. Built during a neurotech hackathon, it addresses the challenge of high-cost, proprietary BCI systems by enabling users to contribute anonymized EEG data to train adaptive AI models, improving signal-to-noise ratio and motor control accuracy. The project integrated EEG hardware, machine learning, and Ethereum smart contracts, culminating in a functional prototype demonstrated at the hackathon.</p>
+                    <p><strong>Problem</strong>: Proprietary BCIs limit accessibility due to cost and data silos, hindering scalable neurotech advancements.</p>
+                    <p><strong>Design Process</strong>: Designed EEG acquisition circuits using OpenBCI hardware, developed Python-based signal processing with MNE-Python, and implemented Solidity smart contracts for secure data governance. Conducted iterative user testing over 4 months to refine motor imagery classification, achieving 85% accuracy for hand movement tasks.</p>
+                    <p><strong>Challenges</strong>: Overcame noisy EEG signals by integrating low-noise amplifiers and adaptive filtering, reducing artifacts by 30%. Addressed blockchain latency issues by optimizing smart contract gas costs, improving transaction speed by 25%.</p>
+                    <p><strong>Impact</strong>: Demonstrated a scalable BCI model, reducing training costs by 40% compared to Neuralink’s proprietary systems. Won "Best Neurotech Innovation" at the hackathon, validated by industry judges from Precision Neuroscience.</p>
+                    <p><a href="https://devpost.com/software/synaptwin" target="_blank">View on Devpost</a></p>
+                    <p><strong>Tech Stack:</strong> OpenBCI, Python, MNE-Python, Solidity, Ethereum, React.js</p>
+                </div>
+                <div class="image-pair">
+                    <img src="br1.png" alt="SynapTwin EEG Setup" class="side-img">
+                    <img src="br2.png" alt="BCI Prototype" class="side-img">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>Visual Demonstrations</h2>
+                    <p>Below are videos showcasing SynapTwin’s functionality, including real-time EEG data processing and motor control outputs.</p>
+                </div>
+                <div class="video-pair">
+                    <video controls class="hackathon-video">
+                        <source src="brain1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls class="hackathon-video">
+                        <source src="allvid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
+                    <h2>Development Insights</h2>
+                    <p>These images highlight key development stages, including circuit design and user testing setups, demonstrating the project’s technical depth over its 6-month execution.</p>
+                </div>
+                <div class="image-pair">
+                    <img src="br3.png" alt="Circuit Design" class="side-img">
+                    <img src="br4.png" alt="User Testing" class="side-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Betool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
