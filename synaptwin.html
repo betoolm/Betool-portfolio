@@ -20,16 +20,33 @@
         <div class="title-wrapper">
             <h1>SynapTwin</h1>
             <a href="https://devpost.com/software/synaptwin" target="_blank">
-                <img src="devpost-preview.png" alt="SynapTwin Devpost Preview" class="devpost-preview">
+                
             </a>
-            <p><a href="https://devpost.com/software/synaptwin" target="_blank">View on Devpost</a></p>
+            <p><a href="https://devpost.com/software/synaptwin" target="_blank" class="devpost-link">View on Devpost</a></p>
         </div>
         <div class="project-content">
             <div class="content-section">
                 <div class="text-block">
+                    <h2>Visual Demonstrations</h2>
+                    <p>These videos showcase SynapTwin’s real time processing and motor control outputs, demonstrating the platform’s ability to visualize and classify emotional states. The second video is a sped up demonstration that shows an AI assistant initialted after stress is ddetected.</p>
+                </div>
+                <div class="video-stack">
+                    <video controls class="hackathon-video">
+                        <source src="brain1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls class="hackathon-video">
+                        <source src="allvid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="text-block">
                     <h2>About SynapTwin</h2>
-                    <p>Mental healthcare traditionally depends on self-reporting or observable symptoms. By 2035, AI-based platforms could read neural and physiological signals early, spotting indicative patterns leading to severe depression or manic episodes before clinical crises emerge. We talk a lot about digital twins in tech, exact replicas of machines, cities, even the human body. But what about the mind? What about stress, burnout, emotional overload, the stuff that sneaks up silently?</p>
-                    <p>SynapTwin is a real-time emotional digital twin built to bridge the gap between invisible mental stress and visible understanding. While digital twins have transformed industries from aerospace to healthcare, emotional well-being remains largely invisible, often recognized too late. SynapTwin creates a dynamic 3D visualization of your brain’s emotional state, helping researchers, clinicians, and individuals see stress, burnout, and focus levels in ways never before possible.</p>
+                    <p>Mental healthcare traditionally depends on self-reporting or observable symptoms. By 2035, AI based platforms could read neural and physiological signals early, spotting indicative patterns leading to severe depression or manic episodes before clinical crises emerge. We talk a lot about digital twins in tech, exact replicas of machines, cities, even the human body. But what about the mind? What about stress, burnout, emotional overload, the stuff that sneaks up silently?</p>
+                    <p>SynapTwin is a real time emotional digital twin built to bridge the gap between invisible mental stress and visible understanding. While digital twins have transformed industries from aerospace to healthcare, emotional well-being remains largely invisible, often recognized too late. SynapTwin creates a dynamic 3D visualization of your brain’s emotional state, helping researchers, clinicians, and individuals see stress, burnout, and focus levels in ways never before possible.</p>
                     <p>By transforming physiological signals into immediate, intuitive visuals, SynapTwin offers a new frontier: making mental health as tangible as physical health.</p>
                 </div>
                 <div class="image-pair">
@@ -44,8 +61,8 @@
                     <ul>
                         <li><strong>Data Capture</strong>: Using OpenBCI’s EmotiBit sensor, SynapTwin captures real-time physiological data including heart rate (HR), electrodermal activity (EDA), and motion (IMU).</li>
                         <li><strong>Emotion Classification</strong>: A trained machine learning model processes incoming signals to classify emotional states: Calm, Anxious, Focused, or Stressed.</li>
-                        <li><strong>Brain Visualization</strong>: Physiological signals are mapped onto a segmented 3D brain model inside NVIDIA Omniverse, activating regions like the amygdala, insula, hippocampus, and motor cortex. Regions glow with biologically-tuned intensity to reflect the emotional state, using dynamic heatmaps.</li>
-                        <li><strong>Real-time Alerts</strong>: When stress indicators cross a threshold, SynapTwin triggers an AI-driven companion ("Gemini") to offer reflective guidance—not diagnosis, but intervention through awareness.</li>
+                        <li><strong>Brain Visualization</strong>: Physiological signals are mapped onto a segmented 3D brain model inside NVIDIA Omniverse, activating regions like the amygdala, insula, hippocampus, and motor cortex. Regions glow with biologically tuned intensity to reflect the emotional state, using dynamic heatmaps.</li>
+                        <li><strong>Real time Alerts</strong>: When stress indicators cross a threshold, SynapTwin triggers an AI- riven companion ("Gemini") to offer reflective guidance not diagnosis, but intervention through awareness.</li>
                     </ul>
                 </div>
             </div>
@@ -68,16 +85,6 @@
                     </ul>
                     <p><strong>Tech Stack:</strong> OpenBCI, EmotiBit, Python, MNE-Python, NVIDIA Omniverse, Blender, Machine Learning, Gemini</p>
                 </div>
-                <div class="video-stack">
-                    <video controls class="hackathon-video">
-                        <source src="brain1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <video controls class="hackathon-video">
-                        <source src="allvid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
             </div>
 
             <div class="content-section">
@@ -85,7 +92,7 @@
                     <h2>Next Steps</h2>
                     <p>SynapTwin is only the beginning. Planned future developments include:</p>
                     <ul>
-                        <li><strong>Integration with Real-World Data</strong>: Replace synthetic data with real-world physiological recordings to increase the accuracy and realism of emotion modeling.</li>
+                        <li><strong>Integration with Real-World Data</strong>: Replace synthetic data with real world physiological recordings to increase the accuracy and realism of emotion modeling.</li>
                         <li><strong>Advanced Emotion Modeling</strong>: Move beyond simple states to capture complex emotional experiences such as overwhelm, resilience, and burnout using deep learning models.</li>
                         <li><strong>Personalized Emotional Baselines</strong>: Develop adaptive baseline models that account for individual differences, enabling personalized emotional detection and reducing false positives.</li>
                         <li><strong>Longitudinal Emotional Tracking</strong>: Expand SynapTwin to monitor changes over days, weeks, and months, offering insights into emotional resilience, recovery, and vulnerability patterns.</li>
