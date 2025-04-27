@@ -481,8 +481,17 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    align-items: flex-end;
     margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text-block p {
+    margin-bottom: 10px;
+}
+
+.text-block p:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -498,5 +507,6 @@ footer {
 
     .image-stack {
         align-items: center;
+        margin-left: 0;
     }
 }
