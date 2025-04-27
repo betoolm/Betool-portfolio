@@ -449,23 +449,38 @@ footer {
     #display: #inline-block;
     text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
-#hackathons {
-    padding: 60px 20px;
-    text-align: center;
+.devpost-preview {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
 }
 
-.video-pair {
+.video-stack {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    align-items: flex-end;
+    margin-left: 20px;
 }
 
 .hackathon-video {
-    width: 300px;
+    width: 400px; /* Increased size */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .video-stack {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .hackathon-video {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 .project-card h4 {
