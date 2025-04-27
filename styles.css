@@ -449,12 +449,16 @@ footer {
     #display: #inline-block;
     text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
-.devpost-preview {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    margin: 10px 0;
-    display: block;
+
+.devpost-link {
+    font-size: 20px;
+    color: #00D4FF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.devpost-link:hover {
+    color: #D0D0D0;
 }
 
 .video-stack {
@@ -466,7 +470,7 @@ footer {
 }
 
 .hackathon-video {
-    width: 400px; /* Increased size */
+    width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
@@ -481,10 +485,4 @@ footer {
         width: 100%;
         max-width: 400px;
     }
-}
-
-.project-card h4 {
-    font-size: 18px;
-    color: #00D4FF;
-    margin: 20px 0 10px;
 }
