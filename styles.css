@@ -450,8 +450,10 @@ footer {
     text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
 
+
+
 .devpost-link {
-    font-size: 20px;
+    font-size: 50px;
     color: #00D4FF;
     text-decoration: underline;
     transition: color 0.3s ease;
@@ -475,6 +477,14 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3);
 }
 
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
 @media (max-width: 768px) {
     .video-stack {
         align-items: center;
@@ -484,5 +494,9 @@ footer {
     .hackathon-video {
         width: 100%;
         max-width: 400px;
+    }
+
+    .image-stack {
+        align-items: center;
     }
 }
