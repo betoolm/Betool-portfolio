@@ -450,7 +450,13 @@ footer {
     text-shadow: 0 0 8px rgba(0, 212, 255, 1), 0 0 15px rgba(0, 212, 255, 0.7);
 }
 
-
+.devpost-preview {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
+}
 
 .devpost-link {
     font-size: 20px;
